@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bundle Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main heading above the grouping of boxes -->
+    <h1>YAY! It’s BOGO</h1>
+
+    <!-- Container holding the three bundle boxes -->
+    <main class="container">
+        <!-- Top Box (1 Unit) -->
+        <section class="bundle-box" id="box1">
+            <header class="box-header">
+                <input type="radio" id="unit1" name="bundle" value="1">
+                <label for="unit1">1 Unit</label>
+                <span class="badge">10% Off</span>
+                <span class="price">$10.00 USD</span>
+                <span class="old-price">$24.00 USD</span>
+            </header>
+            <!-- Dropdowns for Box 1 -->
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <label for="size1-box1">Size</label>
+                    <select id="size1-box1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color1-box1">Colour</label>
+                    <select id="color1-box1">
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="size2-box1">Size</label>
+                    <select id="size2-box1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color2-box1">Colour</label>
+                    <select id="color2-box1">
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle Box (2 Units) -->
+        <section class="bundle-box " id="box2">
+            <header class="box-header">
+                <input type="radio" id="unit2" name="bundle" value="2" checked>
+                <label for="unit2">2 Units</label>
+                <span class="badge popular">20% Off</span>
+                <span class="price">$18.00 USD</span>
+                <span class="old-price">$24.00 USD</span>
+                <span class="most-popular">MOST POPULAR</span>
+            </header>
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <label for="size1-box2">Size</label>
+                    <select id="size1-box2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color1-box2">Colour</label>
+                    <select id="color1-box2">
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="size2-box2">Size</label>
+                    <select id="size2-box2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color2-box2">Colour</label>
+                    <select id="color2-box2">
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Box (3 Units) -->
+        <section class="bundle-box" id="box3">
+            <header class="box-header">
+                <input type="radio" id="unit3" name="bundle" value="3">
+                <label for="unit3">3 Units</label>
+                <span class="badge">30% Off</span>
+                <span class="price">$24.00 USD</span>
+                <span class="old-price">$24.00 USD</span>
+            </header>
+            <!-- Dropdowns for Box 3 -->
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <label for="size1-box3">Size</label>
+                    <select id="size1-box3">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color1-box3">Colour</label>
+                    <select id="color1-box3">
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="size2-box3">Size</label>
+                    <select id="size2-box3">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color2-box3">Colour</label>
+                    <select id="color2-box3">
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add to Cart button below the grouping of boxes -->
+    <button class="add-to-cart-btn">Add to Cart</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

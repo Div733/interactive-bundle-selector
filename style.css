@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Center heading, container, and button vertically */
+    height: 100vh;
+}
+
+h1 {
+    color: #ff69b4;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Container to group the three boxes */
+.container {
+    width: 341px;  /* Fixed width for the container */
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);  /* Softer shadow */
+    text-align: center;
+    border: 1px solid #e0e0e0;  /* Light gray border for a clean look */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between the boxes */
+    position: relative;
+    box-sizing: border-box; /* Ensures padding and border fit within the total width */
+}
+
+/* Bundle Box Default Styles (before clicking) */
+.bundle-box {
+    width: calc(100% - 20px);  /* Full width of the container minus padding */
+    height: 74px;  /* Initial height before expansion */
+    margin: 0 auto;  /* Center the boxes within the container */
+    border: 1.5px solid #e0e0e0;  /* Light gray border */
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0;  /* No rounded corners, keeping sharp edges */
+}
+
+.bundle-box:hover {
+    transform: scale(1.02);
+}
+
+/* Expanded box styles */
+.expanded {
+    height: 174px;  /* Height after clicking (expanded) */
+    border-color: #ff69b4;  /* Highlight the border on expansion */
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #38a169;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #c0c0c0;
+}
+
+.most-popular {
+    background-color: yellow;
+    padding: 3px;
+    font-size: 8px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: black;
+}
+
+/* Badge for special discounts */
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: yellow;
+    color: black;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* Dropdowns (hidden by default) */
+.dropdowns {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+/* Make dropdown visible when expanded */
+.expanded .dropdowns {
+    display: block;
+    opacity: 1;
+}
+
+/* Add to Cart Button (with new properties) */
+.add-to-cart-btn {
+    width: 342px;
+    height: 40px;
+    padding: 10px 0px 0px 0px;
+    gap: 8px;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 4px 0px 0px 0px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 497px;
+    left: 58px;
+    opacity: 0;
+}
